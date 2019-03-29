@@ -95,3 +95,7 @@ def winner(board)
   winning_indices = won?(board)
   winner = won?(board) ? board[winning_indices[0]] : nil
 end
+
+def play
+  puts "Input numbers 1-9"
+end
