@@ -89,9 +89,9 @@ end
 
 def over?(board)
   draw?(board) || won?(board)
+end
 
 def winner(board)
   winning_indices = won?(board)
   winner = won?(board) ? board[winning_indices[0]] : nil
-  winner
 end
