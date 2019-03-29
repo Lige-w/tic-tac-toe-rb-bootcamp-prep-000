@@ -96,6 +96,15 @@ def winner(board)
   winner = won?(board) ? board[winning_indices[0]] : nil
 end
 
-def play
-  puts "Input numbers 1-9"
+def play(board)
+  while !over?(board)
+    turn(board)
+  end
+
+  if won?(board)
+    puts "Congtatulations, #{winner(board)}! You are the winner!"
+  elsif draw?(board)
+    puts "Draw :-("
+  end
+
 end
