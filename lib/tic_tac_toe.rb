@@ -34,6 +34,7 @@ def valid_move?(board, index)
 end
 
 def turn(board)
+  player = current_player(board)
   puts "Make your move by entering a number from 1 to 9"
   input = gets.strip
   index = input_to_index(input)
