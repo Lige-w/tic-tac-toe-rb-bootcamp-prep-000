@@ -104,7 +104,7 @@ def play(board)
   if won?(board)
     puts "Congtatulations #{winner(board)}!"
   elsif draw?(board)
-    puts "Draw :-("
+    puts "Draw"
   end
 
 end
